@@ -1,0 +1,176 @@
+body {
+    background-image: url(../assets/signup-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  /* Signup Form Container */
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    padding: 30px;
+    border-radius: 15px;
+    background: rgba(0, 0, 0, 0.3); /* Glassmorphism Effect */
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+  }
+  
+  /* Signup Title */
+  .heading {
+    font-size: 2rem;
+    font-weight: bold;
+    color: cyan;
+    text-shadow: 0px 0px 10px cyan;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
+  
+  /* Input Box */
+  .input-box {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  /* Floating Label */
+  .input-box label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    font-size: 16px;
+    color: rgba(0, 255, 255, 0.7);
+    transition: all 0.3s ease;
+    pointer-events: none;
+  }
+  
+  /* Move label up when input is focused or has text */
+  .input-box input:focus ~ label,
+  .input-box input:not(:placeholder-shown) ~ label {
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    color: cyan;
+    background: black;
+    padding: 0 5px;
+    border-radius: 5px;
+  }
+  
+  /* Neon Input Fields */
+  .input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid rgba(0, 255, 255, 0.7);
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+  }
+  
+  /* Input Focus Glow */
+  .input-box input:focus {
+    border-color: cyan;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 1);
+  }
+  
+  /* Centered Submit Button */
+  .submit-btn {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: black;
+    background: cyan;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+    text-align: center;
+    margin-left: 10px;
+  }
+  
+  /* Neon Hover Effect */
+  .submit-btn:hover {
+    background: black;
+    color: cyan;
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 20px cyan;
+  }
+  
+/* Styling for the Password Validation */
+.password-validation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .password-validation li {
+    color: #fff;
+    font-size: 14px;
+    margin: 5px 0;
+    display: flex;
+    align-items: center;
+    opacity: 1; /* Initial state visible */
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .password-validation .tick,
+  .password-validation .cross {
+    margin-right: 10px;
+    font-size: 18px;
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .password-validation .valid .tick {
+    color: green;
+    opacity: 1; /* Make tick visible */
+    transform: scale(1.2);
+  }
+  
+  .password-validation .invalid .cross {
+    color: red;
+    opacity: 1; /* Make cross visible */
+    transform: scale(1.2);
+  }
+  
+  .password-validation .invalid .tick,
+  .password-validation .valid .cross {
+    opacity: 0; /* Hide the opposite icon */
+  }
+  
+  .password-validation li.hidden {
+    opacity: 0; /* Hide the entire list item when condition is met */
+    transform: translateY(-20px); /* Apply an upward motion effect */
+  }
+  
+  /* Error messages styling */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  .valid {
+    border-color: green !important;
+  }
+  
+  .invalid {
+    border-color: red !important;
+  }
+  

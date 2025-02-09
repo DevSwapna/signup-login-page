@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./Home.css";
 import HomeNavbar from "./HomeNavbar";
 
@@ -14,9 +15,9 @@ function Home() {
             <a href="#" className="login">
               LOGIN
             </a>
-            <a href="#" className="signup">
+            <Link to="/signup" className="signup">
               SIGNUP
-            </a>
+            </Link>
           </div>
         </div>
       </main>
