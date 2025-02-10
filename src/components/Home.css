@@ -11,7 +11,7 @@
   padding: 0;
   background-image: url(home-background.png); /* Home page background image */
   background-size: cover;
-  overflow-y: hidden;
+  overflow: hidden;
   width: 100%; /* Make sure to specify width */
 }
 
