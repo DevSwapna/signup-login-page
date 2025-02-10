@@ -68,7 +68,7 @@ function Signup() {
   };
 
   return (
-    <div className="parent-container">
+    <div className="signup-page">
       <h1 className="heading">SIGNUP</h1>
       <div className="form-container">
         <form action="">
@@ -122,7 +122,7 @@ function Signup() {
               onClick={togglePasswordVisibility}
               style={{
                 position: "absolute",
-                right: "10px",
+                right: "0.5px",
                 top: "50%",
                 transform: "translateY(-50%)",
                 cursor: "pointer",
