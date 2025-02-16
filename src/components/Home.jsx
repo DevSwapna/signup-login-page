@@ -12,9 +12,9 @@ function Home() {
           <h3 className="home-text2">Learn With Us</h3>
           <h4 className="home-text3">By SwapnaSahoo</h4>
           <div className="lgoin-signup">
-            <a href="#" className="login">
+            <Link to="/login" className="login">
               LOGIN
-            </a>
+            </Link>
             <Link to="/signup" className="signup">
               SIGNUP
             </Link>

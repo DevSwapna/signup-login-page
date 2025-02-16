@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-font: "Poppins", sans-serif;
+}
+
+body {
+  background-image: url(../assets/login-background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+  border: 2px solid rgba(0, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: cyan;
+  text-shadow: 0px 0px 5px cyan;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.input-box label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  font-size: 16px;
+  color: rgba(0, 255, 255, 0.7);
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.input-box input:focus ~ label,
+.input-box input:not(:placeholder-shown) ~ label {
+  top: -10px;
+  left: 10px;
+  font-size: 12px;
+  color: cyan;
+  background: black;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid rgba(0, 255, 255, 0.7);
+  background: transparent;
+  color: white;
+  font-size: 16px;
+  border-radius: 5px;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.7);
+}
+
+.input-box input:focus {
+  border-color: cyan;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 1);
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  background: cyan;
+  border: 2px solid cyan;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.7);
+  text-align: center;
+}
+
+.submit-btn:hover {
+  background: black;
+  color: cyan;
+  border: 2px solid cyan;
+  box-shadow: 0px 0px 20px cyan;
+}
+
+/* Error messages styling */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.valid {
+  border-color: green !important;
+}
+
+.invalid {
+  border-color: red !important;
+}

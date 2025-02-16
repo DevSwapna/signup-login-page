@@ -7,7 +7,7 @@
 }
 
 body {
-  background-image: url(../assets/signup-background.png);
+  background-image: url(../assets/signup-background.png) !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
